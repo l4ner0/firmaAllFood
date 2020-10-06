@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Firma Correo</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap" rel="stylesheet">
 </head>
 
 <body class="body">
     <div class="content">
         <div class="content-left">
             <div class="content-left__container-img">
-                <img src="https://www.pinclipart.com/picdir/big/495-4951715_carro-de-compras-blue-cart-clipart.png"
-                    alt="" class="content-left__img">
+                <img src="./image/logo_svg.svg" alt="" class="content-left__img">
             </div>
-            <p class="content-left__brand">all<span class="content-left__brand--red">food</span></p>
-            <span class="content-left__description">Software para restaurantes</span>
+            <!--             <p class="content-left__brand">all<span class="content-left__brand--red">food</span></p>
+            <span class="content-left__description">Software para restaurantes</span> -->
         </div>
         <div class="content-right">
             <div class="content-right__header">
@@ -48,12 +48,13 @@
     .body {
         /* border: 1px solid red; */
         max-width: 300px;
+        font-family: 'Montserrat', sans-serif;
     }
 
     .content {
         display: flex;
         justify-content: center;
-        color: #444242;
+        color: #28747B;
     }
 
     .content-left {
@@ -61,8 +62,15 @@
         width: 150px;
     }
 
+    .content-left__container-img {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .content-left__img {
-        max-width: 60px;
+        max-width: 100px;
     }
 
     .content-left__brand {
@@ -72,7 +80,7 @@
     }
 
     .content-left__brand--red {
-        color: #F83F37;
+        color: #003C38;
     }
 
     .content-left__description {
@@ -82,13 +90,13 @@
 
     .content-right {
         width: 150px;
-        border-left: 1px solid #444242;
+        border-left: 1px solid #28747B;
         padding-left: 20px;
     }
 
     .content-right__name {
         text-transform: uppercase;
-        color: #F83F37;
+        color: #003C38;
         font-size: 1.1em;
         margin: 0 0;
     }
@@ -119,7 +127,7 @@
     .content-right__icon {
         margin-right: 15px;
         font-size: 1.4em;
-        color: #F83F37;
+        color: #003C38;
     }
 
     .content-right__info {
@@ -136,12 +144,13 @@
 
     .footer__line {
         width: 40px;
-        border: 1px solid #F83F37;
+        border: 1px solid #003C38;
     }
 
     .footer__text {
         margin: 10px 0 0;
         font-size: .9em;
+        color: #28747B;
     }
 
     @media (min-width: 425px) {
@@ -172,6 +181,10 @@
 
         .content-left {
             width: 250px;
+        }
+
+        .content-left__img {
+            max-width: 140px;
         }
 
         .content-left__brand {
